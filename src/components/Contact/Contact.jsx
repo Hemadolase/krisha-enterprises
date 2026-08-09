@@ -25,7 +25,6 @@ function Contact() {
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
 
-
   // =========================
   // HANDLE INPUT CHANGE
   // =========================
@@ -38,7 +37,6 @@ function Contact() {
       [name]: value,
     });
   };
-
 
   // =========================
   // HANDLE FORM SUBMIT
@@ -89,9 +87,8 @@ function Contact() {
     setLoading(false);
   };
 
-
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
 
       {/* =========================
           HEADING
@@ -99,7 +96,7 @@ function Contact() {
 
       <div className="contact-heading">
 
-        <span className="section-tag" >
+        <span className="section-tag">
           CONTACT US
         </span>
 
@@ -139,7 +136,9 @@ function Contact() {
           </p>
 
 
-          {/* ADDRESS */}
+          {/* =========================
+              ADDRESS
+          ========================= */}
 
           <div className="contact-item">
 
@@ -164,7 +163,9 @@ function Contact() {
           </div>
 
 
-          {/* PHONE */}
+          {/* =========================
+              PHONE
+          ========================= */}
 
           <div className="contact-item">
 
@@ -190,7 +191,9 @@ function Contact() {
           </div>
 
 
-          {/* EMAIL */}
+          {/* =========================
+              EMAIL
+          ========================= */}
 
           <div className="contact-item">
 
@@ -216,7 +219,9 @@ function Contact() {
           </div>
 
 
-          {/* WORKING HOURS */}
+          {/* =========================
+              WORKING HOURS
+          ========================= */}
 
           <div className="contact-item">
 
@@ -241,7 +246,9 @@ function Contact() {
           </div>
 
 
-          {/* GSTIN */}
+          {/* =========================
+              GSTIN
+          ========================= */}
 
           <div className="contact-item">
 
@@ -263,6 +270,40 @@ function Contact() {
 
           </div>
 
+
+          {/* =========================
+              GOOGLE MAP
+          ========================= */}
+
+          <div className="contact-map">
+
+            <iframe
+              src="https://www.google.com/maps?q=18.458389,73.792564&output=embed"
+              width="100%"
+              height="260"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Krisha Enterprises Location"
+            ></iframe>
+
+          </div>
+
+
+          {/* =========================
+              GET DIRECTIONS
+          ========================= */}
+
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=18.458389,73.792564"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="direction-btn"
+          >
+            Get Directions →
+          </a>
+
         </div>
 
 
@@ -270,7 +311,7 @@ function Contact() {
             RIGHT SIDE FORM
         ========================= */}
 
-        <div className="contact-form-box" id="contact">
+        <div className="contact-form-box">
 
           <h3>
             Send Us a Message
@@ -280,7 +321,9 @@ function Contact() {
           <form onSubmit={handleSubmit}>
 
 
-            {/* NAME + PHONE */}
+            {/* =========================
+                NAME + PHONE
+            ========================= */}
 
             <div className="form-row">
 
@@ -322,7 +365,9 @@ function Contact() {
             </div>
 
 
-            {/* EMAIL */}
+            {/* =========================
+                EMAIL
+            ========================= */}
 
             <div className="form-group">
 
@@ -342,7 +387,9 @@ function Contact() {
             </div>
 
 
-            {/* SUBJECT */}
+            {/* =========================
+                SUBJECT
+            ========================= */}
 
             <div className="form-group">
 
@@ -362,7 +409,9 @@ function Contact() {
             </div>
 
 
-            {/* MESSAGE */}
+            {/* =========================
+                MESSAGE
+            ========================= */}
 
             <div className="form-group">
 
@@ -382,7 +431,9 @@ function Contact() {
             </div>
 
 
-            {/* BUTTON */}
+            {/* =========================
+                BUTTON
+            ========================= */}
 
             <button
               type="submit"
@@ -395,7 +446,9 @@ function Contact() {
             </button>
 
 
-            {/* SUCCESS MESSAGE */}
+            {/* =========================
+                SUCCESS MESSAGE
+            ========================= */}
 
             {status === "success" && (
               <p className="form-success">
@@ -404,7 +457,9 @@ function Contact() {
             )}
 
 
-            {/* ERROR MESSAGE */}
+            {/* =========================
+                ERROR MESSAGE
+            ========================= */}
 
             {status === "error" && (
               <p className="form-error">
