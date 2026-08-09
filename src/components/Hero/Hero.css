@@ -311,155 +311,186 @@
 
   background: #ff8c00;
 }
-
-
 /* ==========================================
    TABLET
 ========================================== */
 
-@media (max-width:991px){
+@media (max-width: 991px) {
 
-.heroSwiper,
-.hero-slide{
+  .heroSwiper,
+  .hero-slide {
+    height: calc(100vh - 80px);
+    min-height: 640px;
+  }
 
-height:calc(100vh - 80px);
+  .hero .container {
+    padding: 90px 45px 40px;
+  }
 
-min-height:640px;
+  .hero-content h1 {
+    font-size: 52px;
+    line-height: 1.12;
+  }
 
+  .hero-content p {
+    font-size: 17px;
+    max-width: 500px;
+  }
+
+  .hero-tag {
+    margin-bottom: 18px;
+  }
 }
 
-.hero .container{
 
-padding:90px 45px 40px;
-
-}
-
-.hero-content h1{
-
-font-size:52px;
-
-line-height:1.12;
-
-}
-
-.hero-content p{
-
-font-size:17px;
-
-max-width:500px;
-
-}
-
-.hero-tag{
-
-margin-bottom:18px;
-
-}
-
-}
 /* ==========================================
    MOBILE
 ========================================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-.heroSwiper,
-.hero-slide{
-    height:100vh;
-    min-height:650px;
+  .heroSwiper,
+  .hero-slide {
+    height: calc(100vh - 145px);
+    min-height: 600px;
+  }
+
+  .hero .container {
+    padding: 60px 20px 55px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Precision Engineering */
+  .hero-tag {
+    font-size: 11px;
+    padding: 8px 18px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+  }
+
+  /* Main Heading */
+  .hero-content h1 {
+    font-size: 29px;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+  }
+
+  /* Description */
+  .hero-content p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0 auto 25px;
+    padding: 0 5px;
+  }
+
+  /* Buttons */
+  .hero-btns {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    min-height: 56px;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  /* Hide arrows on mobile */
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  /* Pagination */
+  .swiper-pagination {
+    bottom: 18px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 28px;
+  }
+
+  /* Background Position */
+  .slide-1,
+  .slide-1::before {
+    background-position: 72% center;
+  }
+
+  .slide-2,
+  .slide-2::before {
+    background-position: 68% center;
+  }
+
+  .slide-3,
+  .slide-3::before {
+    background-position: 72% center;
+  }
 }
 
-.hero .container{
-    padding:85px 20px 70px;
-    align-items:flex-start;
-    justify-content:center;
-}
 
-.hero-content{
-    max-width:100%;
-    text-align:center;
-}
-
-.hero-tag{
-    font-size:11px;
-    padding:8px 18px;
-    margin-bottom:15px;
-}
-
-.hero-content h1{
-    font-size:28px;
-    line-height:1.25;
-    margin-bottom:15px;
-}
-
-.hero-content p{
-    font-size:14px;
-    line-height:1.6;
-    margin-bottom:22px;
-}
-
-.hero-btns{
-    flex-direction:column;
-    gap:12px;
-}
-
-.btn-primary,
-.btn-outline{
-    width:100%;
-    padding:14px;
-}
-
-.swiper-button-prev,
-.swiper-button-next{
-    display:none;
-}
-
-.swiper-pagination{
-    bottom:20px !important;
-}
-
-.slide-1,
-.slide-1::before{
-    background-position:78% center;
-}
-
-.slide-2,
-.slide-2::before{
-    background-position:70% center;
-}
-
-.slide-3,
-.slide-3::before{
-    background-position:75% center;
-}
-
-}
 /* ==========================================
    SMALL MOBILE
 ========================================== */
 
-@media(max-width:480px){
+@media (max-width: 480px) {
 
-.heroSwiper,
-.hero-slide{
-    min-height:620px;
+  .heroSwiper,
+  .hero-slide {
+    height: calc(100vh - 145px);
+    min-height: 570px;
+  }
+
+  .hero .container {
+    padding: 50px 18px 50px;
+  }
+
+  .hero-tag {
+    font-size: 10px;
+    padding: 8px 16px;
+    letter-spacing: 1.8px;
+  }
+
+  .hero-content h1 {
+    font-size: 27px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 22px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    min-height: 54px;
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .swiper-pagination {
+    bottom: 14px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 26px;
+  }
 }
-
-.hero .container{
-    padding:80px 18px 65px;
-}
-
-.hero-content h1{
-    font-size:24px;
-}
-
-.hero-content p{
-    font-size:13px;
-}
-
-.swiper-pagination{
-    bottom:15px !important;
-}
-
-}
-

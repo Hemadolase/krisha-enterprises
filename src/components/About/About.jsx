@@ -174,7 +174,7 @@ function About() {
 
           <CalendarDays size={40} />
 
-          <h3>10+</h3>
+          <h3>2+</h3>
 
           <p>Years Experience</p>
 
