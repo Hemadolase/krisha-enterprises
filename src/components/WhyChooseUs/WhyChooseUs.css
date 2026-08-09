@@ -1,0 +1,184 @@
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+.why-section{
+    padding:90px 0;
+    background:#f8f9fa;
+}
+
+/* ==========================
+   HEADING
+========================== */
+
+.why-heading{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 60px;
+}
+
+.why-heading span{
+    color:#ff7a00;
+    font-size:16px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.why-heading h2{
+    font-size:46px;
+    font-weight:800;
+    color:#222;
+    margin:15px 0;
+    line-height:1.2;
+}
+
+.why-heading p{
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.why-card{
+    background:#fff;
+    border-radius:18px;
+    padding:40px 30px;
+    text-align:center;
+    height:100%;
+    border:1px solid #ececec;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s ease;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   ICON
+========================== */
+
+.why-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 25px;
+    background:#ff7a00;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    transition:.4s;
+}
+
+.why-card:hover .why-icon{
+    background:#111;
+    transform:rotate(360deg);
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.why-card h4{
+    font-size:24px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#666;
+    font-size:15px;
+    line-height:1.8;
+    margin:0;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:991px){
+
+    .why-section{
+        padding:70px 0;
+    }
+
+    .why-heading h2{
+        font-size:36px;
+    }
+
+    .why-card{
+        padding:35px 25px;
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:767px){
+
+    .why-section{
+        padding:60px 15px;
+    }
+
+    .why-heading{
+        margin-bottom:40px;
+    }
+
+    .why-heading h2{
+        font-size:30px;
+    }
+
+    .why-heading p{
+        font-size:15px;
+    }
+
+    .why-card{
+        padding:30px 22px;
+    }
+
+    .why-icon{
+        width:70px;
+        height:70px;
+        font-size:28px;
+    }
+
+    .why-card h4{
+        font-size:22px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .why-heading span{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .why-heading h2{
+        font-size:26px;
+    }
+
+    .why-card{
+        padding:28px 20px;
+    }
+
+    .why-card h4{
+        font-size:20px;
+    }
+
+    .why-card p{
+        font-size:14px;
+    }
+
+}

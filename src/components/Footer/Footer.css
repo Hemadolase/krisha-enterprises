@@ -1,0 +1,353 @@
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+  width: 100%;
+  background: #111;
+  color: #fff;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.footer-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+/* =================================
+   FOOTER CONTAINER
+================================= */
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+
+  padding: 65px 50px 50px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    0.8fr
+    1.2fr
+    1.4fr;
+
+  gap: 45px;
+}
+
+
+/* =================================
+   COMPANY
+================================= */
+
+.footer-brand {
+  margin-bottom: 18px;
+}
+
+.footer-brand h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 32px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.footer-brand span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #ff7900;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+.footer-description {
+  max-width: 330px;
+
+  margin: 0 0 15px;
+
+  color: #aaa;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.footer-tagline {
+  margin: 0;
+
+  color: #ff7900;
+
+  font-size: 13px;
+
+  font-style: italic;
+}
+
+
+/* =================================
+   FOOTER TITLE
+================================= */
+
+.footer-title {
+  position: relative;
+
+  margin: 0 0 25px;
+
+  padding-bottom: 12px;
+
+  color: #fff;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+.footer-title::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 45px;
+  height: 3px;
+
+  background: #ff7900;
+
+  border-radius: 10px;
+}
+
+
+/* =================================
+   QUICK LINKS
+================================= */
+
+.footer-links {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #aaa;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff7900;
+
+  padding-left: 5px;
+}
+
+
+/* =================================
+   CONTACT
+================================= */
+
+.footer-contact {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.footer-contact-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+}
+
+.footer-contact-item svg {
+  flex-shrink: 0;
+
+  margin-top: 4px;
+
+  color: #ff7900;
+
+  font-size: 16px;
+}
+
+.footer-contact-item p {
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+.footer-contact-item a {
+  color: #aaa;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+  color: #ff7900;
+}
+
+
+/* =================================
+   FOOTER BOTTOM
+================================= */
+
+.footer-bottom {
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding: 20px 50px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+.footer-bottom span {
+  color: #ff7900;
+
+  font-weight: 600;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1000px) {
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 55px 40px 40px;
+
+    gap: 40px;
+  }
+
+  .footer-description {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    padding: 20px 40px;
+  }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+  .footer-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .footer-brand {
+    gap: 12px;
+  }
+
+  .footer-brand h2 {
+    font-size: 28px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    padding: 45px 25px 35px;
+
+    gap: 35px;
+  }
+
+  .footer-brand h2 {
+    font-size: 28px;
+  }
+
+  .footer-brand span {
+    font-size: 11px;
+  }
+
+  .footer-description {
+    font-size: 13px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .footer-contact-item p,
+  .footer-contact-item a {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    padding: 18px 20px;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 8px;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+  }
+
+}

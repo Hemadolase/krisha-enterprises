@@ -1,0 +1,35 @@
+.expertise-section{
+    background:#111;
+    padding:20px 0;
+}
+
+.expertise-strip{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.expertise-item{
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.expertise-item:hover{
+    color:#ff7a00;
+}
+
+.divider{
+    color:#ff7a00;
+    font-size:20px;
+    font-weight:bold;
+}
+.highlight {
+  color: #ff7a00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

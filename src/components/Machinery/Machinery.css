@@ -1,0 +1,1280 @@
+/* =====================================================
+   MACHINERY SECTION
+===================================================== */
+
+.machinery-section {
+  width: 100%;
+  background: #f7f8fa;
+  padding: 90px 6%;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.machinery-heading {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 55px;
+}
+
+.section-tag {
+  display: inline-block;
+  color: #ff7a00;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.machinery-heading h2 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #111;
+}
+
+.machinery-heading h2 span {
+  color: #ff7a00;
+}
+
+.machinery-heading p {
+  margin: 22px auto 0;
+  max-width: 850px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #68717d;
+}
+
+
+/* =====================================================
+   MACHINERY GRID
+===================================================== */
+
+.machinery-grid {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* =========================
+   MACHINERY CARD
+========================= */
+
+.machinery-card {
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.machinery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.machine-image {
+  width: 100%;
+  height: 300px;          /* आधीपेक्षा कमी */
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f5f5;
+}
+
+.machine-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.machine-content {
+  padding: 28px 25px 30px;
+  text-align: center;
+}
+
+.machine-content h3 {
+  font-size: 27px;
+  line-height: 1.25;
+
+  margin: 0 0 14px;
+
+  color: #111;
+}
+
+
+/* ORANGE LINE */
+
+.orange-line {
+  width: 65px;
+  height: 4px;
+
+  background: #ff7a00;
+
+  border-radius: 10px;
+
+  margin: 0 auto 22px;
+}
+
+
+/* DESCRIPTION */
+
+.machine-content p {
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #667085;
+
+  margin: 0 auto 25px;
+
+  max-width: 390px;
+}
+
+
+/* BUTTON */
+
+.details-btn {
+  border: none;
+
+  background: #ff7a00;
+  color: white;
+
+  padding: 13px 28px;
+
+  border-radius: 30px;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.details-btn:hover {
+  background: #e66d00;
+  transform: translateY(-2px);
+}
+.modal-actions {
+  margin-top: 28px;
+}
+
+.quote-btn {
+  background: #ff7a00;
+  color: #fff;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 13px 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.quote-btn:hover {
+  background: #111;
+  transform: translateY(-2px);
+}
+/* =====================================================
+   ORANGE LINE
+===================================================== */
+
+.orange-line {
+  width: 55px;
+  height: 4px;
+
+  background: #ff7a00;
+
+  border-radius: 10px;
+
+  margin: 16px auto 20px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.machine-content p {
+  margin: 0 auto;
+
+  min-height: 85px;
+
+  max-width: 390px;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #68717d;
+}
+
+
+/* =====================================================
+   VIEW DETAILS BUTTON
+===================================================== */
+
+.details-btn {
+  margin: 25px auto 0;
+
+  border: none;
+
+  padding: 13px 28px;
+
+  border-radius: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #ff8c00,
+    #ff6800
+  );
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(255, 122, 0, 0.3);
+}
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
+.machine-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.78);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  z-index: 99999;
+
+  animation: modalFade 0.3s ease;
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.machine-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+
+  max-height: 90vh;
+
+  background: #fff;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+
+  animation: modalSlide 0.35s ease;
+}
+
+@keyframes modalSlide {
+  from {
+    transform: translateY(30px) scale(0.97);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* =====================================================
+   MODAL IMAGE
+===================================================== */
+
+.modal-image {
+  min-height: 550px;
+
+  background: #f3f3f3;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+
+  max-height: 500px;
+
+  object-fit: contain;
+}
+
+
+/* =====================================================
+   MODAL CONTENT
+===================================================== */
+
+.modal-content {
+  padding: 65px 55px;
+
+  overflow-y: auto;
+}
+
+.modal-tag {
+  display: inline-block;
+
+  color: #ff7a00;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+  margin-bottom: 22px;
+}
+
+.modal-content h2 {
+  margin: 0;
+
+  font-size: 42px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  color: #111;
+}
+
+
+/* =====================================================
+   MODAL LINE
+===================================================== */
+
+.modal-line {
+  width: 70px;
+  height: 4px;
+
+  background: #ff7a00;
+
+  border-radius: 10px;
+
+  margin: 25px 0 35px;
+}
+
+
+/* =====================================================
+   TECHNICAL INFORMATION
+===================================================== */
+
+.technical-info {
+  width: 100%;
+}
+
+.info-row {
+  display: grid;
+
+  grid-template-columns: 180px 1fr;
+
+  gap: 25px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid #e7e7e7;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+.info-row strong {
+  color: #222;
+
+  font-weight: 700;
+}
+
+.info-row span {
+  color: #707070;
+
+  text-align: right;
+}
+
+/* =====================================================
+   MODAL CLOSE BUTTON
+===================================================== */
+
+.modal-close {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  width: 52px;
+  height: 52px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #111;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 100;
+
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: #ff7a00;
+  transform: rotate(90deg);
+}
+
+.modal-close span {
+  display: block;
+  transform: translateY(-1px);
+}
+/* =========================
+   MACHINERY CARD
+========================= */
+
+.machinery-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.machine-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 28px 30px 30px;
+  text-align: center;
+}
+
+/* Title same height */
+.machine-content h3 {
+  min-height: 68px;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Description same height */
+.machine-content p {
+  min-height: 90px;
+  margin: 0 0 22px;
+  line-height: 1.7;
+}
+
+/* =========================
+   VIEW DETAILS BUTTON
+========================= */
+
+.details-btn {
+  margin-top: auto;
+  align-self: center;
+
+  padding: 13px 32px;
+  border: none;
+  border-radius: 30px;
+
+  background: #ff7800;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+  background: #e86600;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(255, 120, 0, 0.25);
+}
+/* =====================================================
+   LARGE TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .machinery-section {
+    padding: 75px 4%;
+  }
+
+  .machinery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .machinery-heading h2 {
+    font-size: 44px;
+  }
+
+  .machine-image {
+    height: 280px;
+  }
+
+  .machine-modal {
+    max-width: 950px;
+  }
+
+  .modal-content {
+    padding: 50px 40px;
+  }
+
+  .modal-content h2 {
+    font-size: 34px;
+  }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+  .modal-close {
+    width: 44px;
+    height: 44px;
+
+    top: 12px;
+    right: 12px;
+
+    font-size: 27px;
+  }
+  .machinery-section {
+    padding: 65px 20px;
+  }
+
+  .machinery-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-tag {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .machinery-heading h2 {
+    font-size: 36px;
+  }
+
+  .machinery-heading p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .machinery-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .machine-image {
+    height: 300px;
+  }
+
+  .machine-content {
+    padding: 28px 22px 30px;
+  }
+
+  .machine-content h3 {
+    font-size: 24px;
+  }
+
+
+  /* MODAL */
+
+  .machine-modal {
+    grid-template-columns: 1fr;
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+  }
+
+  .modal-image {
+    min-height: 280px;
+
+    height: 280px;
+
+    padding: 25px;
+  }
+
+  .modal-image img {
+    max-height: 240px;
+  }
+
+  .modal-content {
+    padding: 35px 25px 40px;
+  }
+
+  .modal-content h2 {
+    font-size: 30px;
+  }
+
+  .info-row {
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+
+    padding: 15px 0;
+  }
+
+  .info-row span {
+    text-align: left;
+  }
+
+  .modal-close {
+    width: 44px;
+    height: 44px;
+
+    font-size: 27px;
+
+    top: 12px;
+    right: 12px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .machinery-section {
+    padding: 50px 15px;
+  }
+
+  .machinery-heading h2 {
+    font-size: 30px;
+  }
+
+  .machinery-heading p {
+    font-size: 15px;
+  }
+
+  .section-tag {
+    font-size: 13px;
+  }
+
+  .machine-image {
+    height: 250px;
+  }
+
+  .machine-content {
+    padding: 25px 18px 28px;
+  }
+
+  .machine-content h3 {
+    font-size: 22px;
+    min-height: 65px;
+  }
+
+  .machine-content p {
+    font-size: 15px;
+    min-height: 80px;
+  }
+
+  .details-btn {
+    font-size: 15px;
+    padding: 12px 25px;
+  }
+
+
+  /* MOBILE MODAL */
+
+  .machine-modal-overlay {
+    padding: 12px;
+  }
+
+  .machine-modal {
+    border-radius: 18px;
+
+    max-height: 94vh;
+  }
+
+  .modal-image {
+    height: 220px;
+    min-height: 220px;
+
+    padding: 18px;
+  }
+
+  .modal-image img {
+    max-height: 190px;
+  }
+
+  .modal-content {
+    padding: 30px 20px 35px;
+  }
+
+  .modal-tag {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .modal-content h2 {
+    font-size: 25px;
+  }
+
+  .modal-line {
+    margin: 18px 0 25px;
+  }
+
+  .info-row {
+    font-size: 14px;
+  }
+
+}
+
+.machine-image {
+  width: 100%;
+  height: 300px;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.machine-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  transition: transform 0.45s ease;
+}
+
+.machine-image:hover img {
+  transform: scale(1.05);
+}
+
+/* =========================================
+   MOBILE MODAL - FINAL FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+  .machine-modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow-y: auto;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    z-index: 99999;
+  }
+
+
+  /* MODAL */
+
+  .machine-modal {
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+
+    max-height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    margin: auto;
+  }
+
+
+  /* IMAGE */
+
+  .modal-image {
+    width: 100%;
+    height: 230px;
+
+    flex-shrink: 0;
+
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f5;
+  }
+
+  .modal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+  }
+
+
+  /* CONTENT */
+
+  .modal-content {
+    width: 100%;
+
+    padding: 25px 20px 30px;
+
+    display: block;
+
+    flex: none;
+  }
+
+
+  /* TAG */
+
+  .modal-tag {
+    display: block;
+
+    color: #ff7a00;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+  }
+
+
+  /* TITLE */
+
+  .modal-content h2 {
+    margin: 0 0 15px;
+
+    color: #111;
+
+    font-size: 25px;
+    line-height: 1.25;
+
+    font-weight: 800;
+  }
+
+
+  /* ORANGE LINE */
+
+  .modal-line {
+    width: 55px;
+    height: 4px;
+
+    background: #ff7a00;
+
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+  }
+
+
+  /* TECHNICAL INFORMATION */
+
+  .technical-info {
+    width: 100%;
+  }
+
+
+  .info-row {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+
+  .info-row strong {
+    color: #222;
+
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+
+  .info-row span {
+    color: #707070;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+  }
+
+
+  /* GET QUOTE */
+
+  .modal-actions {
+    width: 100%;
+
+    margin-top: 22px;
+  }
+
+  .quote-btn {
+    width: 100%;
+
+    border: none;
+
+    background: #ff7a00;
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+  }
+
+
+  /* CLOSE BUTTON */
+
+  .modal-close {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+    line-height: 1;
+
+    z-index: 100;
+
+    cursor: pointer;
+  }
+
+  .modal-close:hover {
+    background: #ff7a00;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .machine-modal-overlay {
+    padding: 10px;
+  }
+
+  .machine-modal {
+    max-height: 94vh;
+
+    border-radius: 18px;
+  }
+
+  .modal-image {
+    height: 210px;
+
+    padding: 12px;
+  }
+
+  .modal-content {
+    padding: 22px 18px 25px;
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+  }
+
+  .modal-tag {
+    font-size: 11px;
+  }
+
+  .info-row {
+    padding: 11px 0;
+  }
+
+  .info-row strong {
+    font-size: 14px;
+  }
+
+  .info-row span {
+    font-size: 13px;
+  }
+
+  .modal-close {
+    width: 40px;
+    height: 40px;
+
+    font-size: 25px;
+  }
+
+}
+
+/* =========================
+   MOBILE MODAL FIX
+========================= */
+
+@media (max-width: 480px) {
+
+  .machine-modal-overlay {
+    padding: 15px;
+    align-items: center;
+  }
+
+  .machine-modal {
+    width: 100%;
+    max-width: 360px;
+    max-height: 90vh;
+    height: auto;
+    overflow-y: auto;
+    display: block;
+    border-radius: 22px;
+  }
+
+  /* Hide large image on mobile */
+  .modal-image {
+    width: 100%;
+    height: 210px;
+    padding: 18px;
+  }
+
+  .modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .modal-content {
+    width: 100%;
+    padding: 20px;
+    overflow: visible;
+  }
+
+  .modal-tag {
+    font-size: 13px;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 8px 0 12px;
+  }
+
+  .modal-line {
+    margin-bottom: 18px;
+  }
+
+  .technical-info {
+    width: 100%;
+  }
+
+  .info-row {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .info-row strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .info-row span {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* GET QUOTE BUTTON */
+  .modal-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 18px 0 5px;
+  }
+
+  .quote-btn {
+    display: block !important;
+    width: 100%;
+    max-width: 220px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* CLOSE BUTTON */
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 20;
+    font-size: 26px;
+    line-height: 1;
+  }
+}
+@media (max-width: 768px) {
+
+  .machine-content {
+    padding: 22px 20px 25px;
+  }
+
+  .machine-content h3 {
+    min-height: 55px;
+    font-size: 22px;
+  }
+
+  .machine-content p {
+    min-height: 80px;
+    font-size: 15px;
+  }
+
+  .details-btn {
+    padding: 11px 26px;
+    font-size: 15px;
+  }
+}

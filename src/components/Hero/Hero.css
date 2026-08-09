@@ -1,0 +1,465 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+    position: relative;
+    overflow: hidden;
+    margin-top: -96px;
+}
+
+.heroSwiper,
+.hero-slide {
+  width: 100%;
+  height: 650px;
+  /* min-height: 680px; */
+}
+
+.hero-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Background Zoom */
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+
+  transform: scale(1);
+  animation: zoomHero 12s ease-in-out infinite alternate;
+
+  z-index: 0;
+}
+
+@keyframes zoomHero {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.50) 45%,
+    rgba(0, 0, 0, 0.18) 100%
+  );
+
+  z-index: 1;
+}
+
+/* Container */
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1320px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  /* Navbar overlap fix */
+  padding: 70px 70px 40px;
+}
+
+/* Content */
+
+.hero-content {
+  max-width: 620px;
+  color: #fff;
+
+  animation: fadeUp .8s ease;
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+/* Tag */
+
+.hero-tag {
+
+  display: inline-block;
+
+  padding: 10px 24px;
+
+  /* margin-bottom: 22px; */
+
+  border-radius: 50px;
+
+  border: 2px solid #ff8c00;
+
+  background: rgba(20,20,20,.45);
+
+  backdrop-filter: blur(10px);
+
+  color: #fff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition: .35s;
+}
+
+.hero-tag:hover {
+
+  background: #ff8c00;
+
+}
+
+/* Heading */
+
+.hero-content h1 {
+
+  font-size: 62px;
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 22px;
+
+  color: #fff;
+
+  text-shadow: 0 6px 20px rgba(0,0,0,.45);
+
+}
+
+/* Paragraph */
+
+.hero-content p {
+
+  max-width: 560px;
+
+  font-size: 20px;
+
+  line-height: 1.8;
+
+  color: rgba(255,255,255,.92);
+
+  margin-bottom: 35px;
+
+}
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-btns {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 34px;
+
+  border-radius: 50px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: .35s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff8c00, #ff6600);
+  color: #fff;
+
+  box-shadow: 0 15px 35px rgba(255, 140, 0, .35);
+}
+
+.btn-primary:hover {
+  color: #fff;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 18px 40px rgba(255, 140, 0, .45);
+}
+
+.btn-outline {
+  border: 2px solid rgba(255,255,255,.75);
+
+  color: #fff;
+
+  backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #111;
+
+  transform: translateY(-5px);
+}
+
+/* ==========================================
+   SWIPER ARROWS
+========================================== */
+
+.swiper-button-prev,
+.swiper-button-next {
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.12);
+
+  border: 1px solid rgba(255,255,255,.18);
+
+  backdrop-filter: blur(10px);
+
+  color: #fff;
+
+  transition: .35s ease;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+.swiper-button-next {
+  right: 30px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #ff8c00;
+  transform: scale(1.08);
+}
+
+/* ==========================================
+   PAGINATION
+========================================== */
+
+.swiper-pagination{
+    bottom: 45px !important;
+    z-index: 20;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+
+  background: rgba(255,255,255,.55);
+
+  opacity: 1;
+
+  transition: .3s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 34px;
+
+  border-radius: 30px;
+
+  background: #ff8c00;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:991px){
+
+.heroSwiper,
+.hero-slide{
+
+height:calc(100vh - 80px);
+
+min-height:640px;
+
+}
+
+.hero .container{
+
+padding:90px 45px 40px;
+
+}
+
+.hero-content h1{
+
+font-size:52px;
+
+line-height:1.12;
+
+}
+
+.hero-content p{
+
+font-size:17px;
+
+max-width:500px;
+
+}
+
+.hero-tag{
+
+margin-bottom:18px;
+
+}
+
+}
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.heroSwiper,
+.hero-slide{
+    height:100vh;
+    min-height:650px;
+}
+
+.hero .container{
+    padding:85px 20px 70px;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.hero-content{
+    max-width:100%;
+    text-align:center;
+}
+
+.hero-tag{
+    font-size:11px;
+    padding:8px 18px;
+    margin-bottom:15px;
+}
+
+.hero-content h1{
+    font-size:28px;
+    line-height:1.25;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:22px;
+}
+
+.hero-btns{
+    flex-direction:column;
+    gap:12px;
+}
+
+.btn-primary,
+.btn-outline{
+    width:100%;
+    padding:14px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    display:none;
+}
+
+.swiper-pagination{
+    bottom:20px !important;
+}
+
+.slide-1,
+.slide-1::before{
+    background-position:78% center;
+}
+
+.slide-2,
+.slide-2::before{
+    background-position:70% center;
+}
+
+.slide-3,
+.slide-3::before{
+    background-position:75% center;
+}
+
+}
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.heroSwiper,
+.hero-slide{
+    min-height:620px;
+}
+
+.hero .container{
+    padding:80px 18px 65px;
+}
+
+.hero-content h1{
+    font-size:24px;
+}
+
+.hero-content p{
+    font-size:13px;
+}
+
+.swiper-pagination{
+    bottom:15px !important;
+}
+
+}
+

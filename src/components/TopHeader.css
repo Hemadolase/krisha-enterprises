@@ -1,0 +1,197 @@
+/* ==========================
+   TOP HEADER
+========================== */
+
+.top-header {
+  width: 100%;
+  height: 46px;
+
+  background: #111111;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 10000;
+}
+
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.top-header-container {
+  width: 100%;
+  max-width: 1350px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+}
+
+
+/* ==========================
+   TOP ITEM
+========================== */
+
+.top-item {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* ==========================
+   ICON
+========================== */
+
+.top-icon {
+  color: #ff8c00;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+
+/* ==========================
+   LINKS
+========================== */
+
+.top-item a {
+  color: #fff;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.top-item a:hover {
+  color: #ff8c00;
+}
+
+
+/* ==========================
+   RIGHT SIDE
+========================== */
+
+.top-right {
+  display: flex;
+  align-items: center;
+
+  gap: 55px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .top-header {
+    height: 46px;
+  }
+
+
+  .top-header-container {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  /* ==========================
+     LOCATION - LEFT
+  ========================== */
+
+  .location {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 11px;
+  }
+
+
+  /* ==========================
+     RIGHT ICONS
+  ========================== */
+
+  .top-right {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-left: auto;
+  }
+
+
+  /* ==========================
+     HIDE PHONE + EMAIL TEXT
+  ========================== */
+
+  .top-right .top-item span {
+    display: none;
+  }
+
+
+  /* ==========================
+     ICON SIZE
+  ========================== */
+
+  .top-icon {
+    font-size: 15px;
+
+    color: #ff8c00;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .top-header {
+    height: 46px;
+  }
+
+
+  .top-header-container {
+    padding: 0 12px;
+  }
+
+
+  .location {
+    font-size: 11px;
+  }
+
+
+  .top-right {
+    gap: 13px;
+  }
+
+
+  .top-icon {
+    font-size: 14px;
+  }
+
+}
