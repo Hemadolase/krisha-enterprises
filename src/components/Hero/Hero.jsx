@@ -36,7 +36,7 @@ const slides = [
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
